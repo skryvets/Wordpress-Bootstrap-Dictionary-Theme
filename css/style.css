@@ -225,6 +225,9 @@ form {
         padding: 10px 15px;
         margin-left: 0;
     }
+    .nav-pills>li+li {
+        margin-left: 0;
+    }
     .main-content {
         position: relative;
     }
