@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="<?php bloginfo('template_url') ?>/" />
 	<title><?php bloginfo('name'); ?></title>
-	<!--	<base href="--><?php //bloginfo('template_url') ?><!--/" />-->
+	<base href="<?php bloginfo('template_url') ?>/" />
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!--Jquery-->
@@ -12,7 +12,7 @@
 	<!--Bootstrap JS-->
 	<script src="js/bootstrap.min.js"></script>
 	<!--Hash-change-->
-	<script src="js/jquery.ba-hashchange.min.js"></script>
+<!--	<script src="js/jquery.ba-hashchange.min.js"></script>-->
 	<!--Custom CSS-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Custom and tabs JS-->
@@ -25,7 +25,7 @@
 		<a href="<?php echo get_home_url(); ?>" class="logo">
 			<img src="images/logo.png" alt="" class="img-responsive">
 		</a>
-		<h1><a href="<?php echo get_home_url(); ?>">Слоўнік запазычанняў</a></h1>
-		<h2><a href="<?php echo get_home_url(); ?>">Англійскія і нямецкія запазычанні інтэрнэт-дыскурсу</a></h2>
+		<h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+		<h2><a href="<?php echo get_home_url(); ?>"><?php bloginfo('description'); ?></a></h2>
 	</header><!--header-->
 </div><!--.header-container-->
