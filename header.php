@@ -3,7 +3,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base href="<?php bloginfo('template_url') ?>/" />
-	<title>Web-site</title>
+	<title><?php bloginfo('name'); ?></title>
 	<!--	<base href="--><?php //bloginfo('template_url') ?><!--/" />-->
 	<!--Bootstrap CSS-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">

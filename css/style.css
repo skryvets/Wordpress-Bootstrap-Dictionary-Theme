@@ -64,9 +64,6 @@ h2 a:hover{
     background-color: #286090;
     border-color: #204d74;
 }
-.nav li a:focus {
-    background: #5488ba;
-}
 
 /*Main content*/
 .main-container {
