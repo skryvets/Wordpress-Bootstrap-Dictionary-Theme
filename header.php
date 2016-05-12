@@ -11,12 +11,9 @@
 	<script src="js/jquery-1.12.3.min.js"></script>
 	<!--Bootstrap JS-->
 	<script src="js/bootstrap.min.js"></script>
-	<!--Hash-change-->
-<!--	<script src="js/jquery.ba-hashchange.min.js"></script>-->
 	<!--Custom CSS-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--Custom and tabs JS-->
-	<!--	<script src="js/tabs.js"></script>-->
+	<!--Main JS-->
 	<script src="js/main.js"></script>
 </head>
 <body>
