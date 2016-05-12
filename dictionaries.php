@@ -6,10 +6,9 @@
 				<div class="col-md-9">
 					<?php get_template_part( 'navigation' ) ?>
 					<div class="middle-content">
-						<?php
-						$dictionaries_content = get_page_by_title('Dictionaries');
-						?>
-						<p><?php echo $dictionaries_content->post_content; ?></p>
+						<?php if ( have_posts() ) : while( have_posts() ) : the_post();
+							the_content();
+						endwhile; endif; ?>
 					</div>
 				</div>
 				<?php get_sidebar(); ?>

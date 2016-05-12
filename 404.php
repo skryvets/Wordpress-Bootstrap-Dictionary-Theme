@@ -1,15 +1,14 @@
 <?php get_header(); ?>
 	<div class="container">
-		<div class="row main-container">
+		<div class="row main-container" style="border-radius: 10px;">
 			<?php get_search_form(); ?>
 			<div class="main-content">
-				<div class="col-md-9">
-					<?php get_template_part( 'navigation' ) ?>
-					<div class="middle-content">
-						<h1>Прабачце, пошук не даў вынікаў...</h1>
+				<div class="col-md-12">
+					<div class="middle-content" style="text-align: center; min-height: 100px;">
+						<h1 style="color: #000; margin-bottom: 20px;">Прабачце, такой старонки няма...</h1> Паспрабуйце перайсцi на <a href="<?php echo get_home_url(); ?>">галоўную</a>.
 					</div>
 				</div>
 			</div><!--.main-content-->
 		</div><!--.main-container-->
 	</div>
-<?php get_footer(); ?>
+</body>
