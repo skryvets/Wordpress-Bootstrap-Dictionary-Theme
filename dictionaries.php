@@ -1,3 +1,5 @@
+<?php /* Template Name: Dictionaries Page */ ?>
+
 <?php get_header(); ?>
 	<div class="container">
 		<div class="row main-container">
@@ -6,9 +8,10 @@
 				<div class="col-md-9">
 					<?php get_template_part( 'navigation' ) ?>
 					<div class="middle-content">
-						<?php if ( have_posts() ) : while( have_posts() ) : the_post();
-							the_content();
-						endwhile; endif; ?>
+						<?php
+						$dictionaries_content = get_page_by_title( 'Dictionaries' );
+						?>
+						<p><?php echo $dictionaries_content->post_content; ?></p>
 					</div>
 				</div>
 				<?php get_sidebar(); ?>
