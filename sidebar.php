@@ -8,6 +8,7 @@
    <div class="sidebar-title">Пошук па літарах:</div>
    <div class="alphabet">
 	  <?php
+	  $home_url = get_home_url();
 	  $is_active = false;
 	  for ( $i = 0; $i <= sizeof( $alphabet ); $i ++ ) {
 		 for ( $j = 0; $j <= sizeof( $letters ) - 1; $j ++ ) {
@@ -17,7 +18,7 @@
 		 }
 		 if ( $is_active == true ) {
 			?>
-			<a href="#" class="active"><?php echo $alphabet[ $i ] ?></a><?php
+			<a href="<?php echo $home_url . "/?s=" . $alphabet[ $i ] ; ?>" class="active"><?php echo $alphabet[ $i ] ?></a><?php
 		 } else {
 			?>
 			<a><?php echo $alphabet[ $i ] ?></a><?php
