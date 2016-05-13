@@ -59,7 +59,7 @@ h2 a:hover{
     margin: 0 0 0 95px;
     padding: 6px 12px;
 }
-.nav li a:hover, .nav li a:active, .nav li a.active {
+.nav li a:hover, .nav li a:active {
     color: #fff;
     background-color: #286090;
     border-color: #204d74;
@@ -146,9 +146,14 @@ form {
     text-align: center;
 }
 .alphabet a {
-    text-decoration: underline;
+    text-decoration: none;
     margin: 0 5px 0 0;
     font-size: 19px;
+    color: #000;
+}
+.alphabet a.active {
+    text-decoration: underline;
+    color: #337ab7;
 }
 
 /*Footer*/
