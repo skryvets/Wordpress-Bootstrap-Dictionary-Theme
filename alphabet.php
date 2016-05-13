@@ -15,38 +15,18 @@ function str_split_unicode( $str, $l = 0 ) {
 }
 
 $alphabet = array( 'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'І', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ў', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Ы', 'Ь', 'Э', 'Ю', 'Я' );
+
 //First letters from the titles
 $letters = array();
 query_posts( 'posts_per_page=500&order=asc' );
 
 //Finding first letters from alphabet
-
 if ( have_posts() ) : while ( have_posts() ) : the_post();
    $current_title = the_title( '', '', false );
    $title_arr     = str_split_unicode( $current_title );
-   for ( $i = 0; $i <= sizeof( $alphabet ); $i ++ ) {
-	  if ( strcmp( $title_arr[0], $alphabet[ $i ] ) == 0 ) {
-		 if ( ! in_array( $alphabet[ $i ], $letters ) ) {
-			array_push( $letters, $alphabet[ $i ] );
-		 }
-	  }
+   if ( ! in_array( $title_arr [0], $letters ) ) {
+	  array_push( $letters, $title_arr [0] );
    }
 endwhile;
 endif;
-
-//echo "<br>";
-//$is_active = false;
-//for ( $i = 0; $i <= sizeof( $alphabet ); $i ++ ) {
-//   for ( $j = 0; $j <= sizeof( $letters ) - 1; $j ++ ) {
-//	  if ( strcmp( $alphabet[ $i ], $letters[ $j ] ) == 0 ) {
-//		 $is_active = true;
-//	  }
-//   }
-//   if ( $is_active == true ) {
-//	  ?><!--<a href="#" class="active" style="color:red;">--><?php //echo $alphabet[ $i ] ?><!--</a>--><?php
-//	  $i = $i + 1;
-//   }
-//   ?><!--<a>--><?php //echo $alphabet[ $i ] ?><!--</a>--><?php
-//   $is_active = false;
-//}
 ?>
